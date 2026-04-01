@@ -28,13 +28,12 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-4 left-4 right-4 z-50 flex items-center justify-between px-6 py-3 rounded-2xl border transition-all duration-300 ${
           scrolled
-            ? "bg-bg-primary/80 backdrop-blur-xl border-border-light shadow-lg shadow-black/20"
+            ? "bg-bg-primary/90 backdrop-blur-xl border-border shadow-sm"
             : "bg-transparent border-transparent"
         }`}
       >
-        <a href="#" className="font-heading font-bold text-lg tracking-tight cursor-pointer">
-          <span className="text-accent-light">P</span>
-          <span className="text-text-primary">ranav</span>
+        <a href="#" className="font-heading font-bold text-lg tracking-tight cursor-pointer text-text-primary">
+          Pranav Sharma
         </a>
 
         {/* Desktop nav */}
@@ -50,7 +49,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:hello@pranavsharma.dev"
-            className="text-sm font-medium px-4 py-2 rounded-lg bg-accent/10 text-accent-light hover:bg-accent/20 border border-accent/20 transition-all duration-200 cursor-pointer"
+            className="text-sm font-medium px-4 py-2 rounded-lg bg-text-primary text-bg-primary hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
           >
             Get in Touch
           </a>
@@ -74,7 +73,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-20 left-4 right-4 z-50 bg-bg-card/95 backdrop-blur-xl border border-border-light rounded-2xl p-6 md:hidden shadow-2xl shadow-black/30"
+            className="fixed top-20 left-4 right-4 z-50 bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl p-6 md:hidden shadow-lg"
           >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -89,7 +88,7 @@ export default function Navbar() {
               ))}
               <a
                 href="mailto:hello@pranavsharma.dev"
-                className="text-sm font-medium px-4 py-3 rounded-lg bg-accent/10 text-accent-light hover:bg-accent/20 border border-accent/20 text-center transition-all duration-200 cursor-pointer"
+                className="text-sm font-medium px-4 py-3 rounded-lg bg-text-primary text-bg-primary text-center hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
               >
                 Get in Touch
               </a>

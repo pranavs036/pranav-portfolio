@@ -2,8 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, MapPin, Briefcase, GraduationCap, Zap } from "lucide-react";
-import { LinkedInIcon, GitHubIcon } from "./icons";
+import { Mail, MapPin, Briefcase, Zap } from "lucide-react";
+import { LinkedInIcon } from "./icons";
 
 function SectionHeading({ label, title, description }: { label: string; title: string; description: string }) {
   const ref = useRef(null);
@@ -14,34 +14,15 @@ function SectionHeading({ label, title, description }: { label: string; title: s
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6 }}
-      className="text-center mb-16 md:mb-20"
+      className="mb-16 md:mb-20"
     >
-      <span className="inline-block text-xs font-heading font-semibold uppercase tracking-[0.2em] text-accent-light mb-4">
+      <span className="inline-block text-xs font-heading font-semibold uppercase tracking-[0.2em] text-text-muted mb-4">
         {label}
       </span>
       <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
         {title}
       </h2>
-      <p className="text-text-secondary text-lg max-w-2xl mx-auto">{description}</p>
-    </motion.div>
-  );
-}
-
-function StatCard({ value, label, delay }: { value: string; label: string; delay: number }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={inView ? { opacity: 1, scale: 1 } : {}}
-      transition={{ duration: 0.5, delay }}
-      className="rounded-2xl border border-border bg-bg-card/50 p-6 text-center"
-    >
-      <div className="text-3xl sm:text-4xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-light to-green mb-1">
-        {value}
-      </div>
-      <div className="text-sm text-text-muted">{label}</div>
+      <p className="text-text-secondary text-lg max-w-2xl">{description}</p>
     </motion.div>
   );
 }
@@ -52,9 +33,6 @@ export default function About() {
 
   return (
     <section id="about" className="relative px-6 py-24 md:py-32">
-      {/* Background accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
-
       <div className="relative max-w-6xl mx-auto">
         <SectionHeading
           label="About"
@@ -71,9 +49,9 @@ export default function About() {
           {/* Bento grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12">
             {/* Main bio card */}
-            <div className="md:col-span-2 rounded-2xl border border-border bg-bg-card/50 p-6 sm:p-8">
+            <div className="md:col-span-2 rounded-2xl border border-border bg-bg-card p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-green flex items-center justify-center text-white font-heading font-bold text-xl">
+                <div className="w-14 h-14 rounded-2xl bg-text-primary flex items-center justify-center text-bg-primary font-heading font-bold text-xl">
                   PS
                 </div>
                 <div>
@@ -84,12 +62,12 @@ export default function About() {
 
               <p className="text-text-secondary leading-relaxed mb-6">
                 I build products that sit at the intersection of artificial intelligence and business.
-                My focus is on creating tools that help brands adapt to the AI-first future --
+                My focus is on creating tools that help brands adapt to the AI-first future &mdash;
                 from optimising product visibility in AI search engines to automating customer
                 engagement with intelligent voice agents.
               </p>
               <p className="text-text-secondary leading-relaxed mb-6">
-                I believe the best AI products are invisible -- they solve real problems so seamlessly
+                I believe the best AI products are invisible &mdash; they solve real problems so seamlessly
                 that users forget there&apos;s complex technology behind them. Every product I build
                 starts with a genuine pain point and works backwards to the simplest possible solution.
               </p>
@@ -104,8 +82,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* Social links card */}
-            <div className="rounded-2xl border border-border bg-bg-card/50 p-6 sm:p-8 flex flex-col justify-between">
+            {/* Connect card */}
+            <div className="rounded-2xl border border-border bg-bg-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <h4 className="font-heading text-sm font-semibold text-text-muted uppercase tracking-wider mb-6">Connect</h4>
                 <div className="space-y-3">
@@ -113,7 +91,7 @@ export default function About() {
                     href="https://linkedin.com/in/pranavsharma"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-accent/30 hover:bg-bg-card-hover transition-all duration-200 cursor-pointer group"
+                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-border-light hover:bg-bg-secondary transition-all duration-200 cursor-pointer group"
                   >
                     <div className="w-9 h-9 rounded-lg bg-[#0A66C2]/10 flex items-center justify-center group-hover:bg-[#0A66C2]/20 transition-colors">
                       <LinkedInIcon size={16} className="text-[#0A66C2]" />
@@ -125,26 +103,11 @@ export default function About() {
                   </a>
 
                   <a
-                    href="https://github.com/pranavsharma"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-accent/30 hover:bg-bg-card-hover transition-all duration-200 cursor-pointer group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                      <GitHubIcon size={16} className="text-text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium text-text-primary">GitHub</div>
-                      <div className="text-xs text-text-muted">@pranavsharma</div>
-                    </div>
-                  </a>
-
-                  <a
                     href="mailto:hello@pranavsharma.dev"
-                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-green/30 hover:bg-bg-card-hover transition-all duration-200 cursor-pointer group"
+                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-border-light hover:bg-bg-secondary transition-all duration-200 cursor-pointer group"
                   >
                     <div className="w-9 h-9 rounded-lg bg-green/10 flex items-center justify-center group-hover:bg-green/20 transition-colors">
-                      <Mail size={16} className="text-green-light" />
+                      <Mail size={16} className="text-green" />
                     </div>
                     <div>
                       <div className="text-sm font-medium text-text-primary">Email</div>
@@ -162,10 +125,10 @@ export default function About() {
           </div>
 
           {/* Experience highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12">
-            <div className="rounded-2xl border border-border bg-bg-card/50 p-6">
-              <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center mb-4">
-                <Briefcase size={18} className="text-accent-light" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="rounded-2xl border border-border bg-bg-card p-6">
+              <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
+                <Briefcase size={18} className="text-text-secondary" />
               </div>
               <h4 className="font-heading text-base font-semibold text-text-primary mb-2">Product Builder</h4>
               <p className="text-sm text-text-muted leading-relaxed">
@@ -173,33 +136,15 @@ export default function About() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-border bg-bg-card/50 p-6">
-              <div className="w-10 h-10 rounded-xl bg-green/10 border border-green/20 flex items-center justify-center mb-4">
-                <Zap size={18} className="text-green-light" />
+            <div className="rounded-2xl border border-border bg-bg-card p-6">
+              <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
+                <Zap size={18} className="text-text-secondary" />
               </div>
               <h4 className="font-heading text-base font-semibold text-text-primary mb-2">AI Engineer</h4>
               <p className="text-sm text-text-muted leading-relaxed">
                 Deep experience with LLMs, voice AI, NLP, and building production AI systems that scale.
               </p>
             </div>
-
-            <div className="rounded-2xl border border-border bg-bg-card/50 p-6">
-              <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center mb-4">
-                <GraduationCap size={18} className="text-accent-light" />
-              </div>
-              <h4 className="font-heading text-base font-semibold text-text-primary mb-2">Continuous Learner</h4>
-              <p className="text-sm text-text-muted leading-relaxed">
-                Always exploring the cutting edge of AI research and applying it to real-world products.
-              </p>
-            </div>
-          </div>
-
-          {/* Stats row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <StatCard value="2+" delay={0} label="AI Products Shipped" />
-            <StatCard value="10k+" delay={0.1} label="Lines of Code" />
-            <StatCard value="3+" delay={0.2} label="AI APIs Integrated" />
-            <StatCard value="24/7" delay={0.3} label="Always Building" />
           </div>
         </motion.div>
       </div>

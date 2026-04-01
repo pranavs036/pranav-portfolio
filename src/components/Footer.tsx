@@ -2,8 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, ArrowUpRight, Heart } from "lucide-react";
-import { LinkedInIcon, GitHubIcon } from "./icons";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { LinkedInIcon } from "./icons";
 
 export default function Footer() {
   const ref = useRef(null);
@@ -20,21 +20,15 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="relative inline-block mb-8">
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-green/20 blur-3xl rounded-full" />
-            <h2 className="relative font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-              Let&apos;s Build Something{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-light to-green">
-                Together
-              </span>
-            </h2>
-          </div>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            Let&apos;s Build Something Together
+          </h2>
           <p className="text-text-secondary text-lg max-w-xl mx-auto mb-8">
             Interested in collaborating on AI products, or just want to chat about the future of AI in commerce?
           </p>
           <a
             href="mailto:hello@pranavsharma.dev"
-            className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-accent to-accent-light text-white font-heading font-semibold hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 cursor-pointer"
+            className="group inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-text-primary text-bg-primary font-heading font-semibold hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
           >
             Say Hello
             <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
@@ -44,8 +38,8 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-border pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-text-muted flex items-center gap-1">
-              Built with <Heart size={12} className="text-accent-light" /> by Pranav Sharma
+            <p className="text-sm text-text-muted">
+              Pranav Sharma
             </p>
 
             <div className="flex items-center gap-4">
@@ -59,17 +53,8 @@ export default function Footer() {
                 <LinkedInIcon size={18} />
               </a>
               <a
-                href="https://github.com/pranavsharma"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-white/5 transition-all duration-200 cursor-pointer"
-                aria-label="GitHub profile"
-              >
-                <GitHubIcon size={18} />
-              </a>
-              <a
                 href="mailto:hello@pranavsharma.dev"
-                className="p-2 rounded-lg text-text-muted hover:text-green-light hover:bg-green/10 transition-all duration-200 cursor-pointer"
+                className="p-2 rounded-lg text-text-muted hover:text-green hover:bg-green/10 transition-all duration-200 cursor-pointer"
                 aria-label="Send email"
               >
                 <Mail size={18} />
