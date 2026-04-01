@@ -120,9 +120,9 @@ function NorthStarProject() {
                 </div>
               </div>
               <p className="text-text-secondary text-sm sm:text-base leading-relaxed max-w-xl">
-                An AI ecommerce platform that helps brands get found in AI search engines.
-                When consumers ask ChatGPT, Perplexity, or Google AI Overviews for product recommendations,
-                NorthStar ensures your brand appears in those answers.
+                An ecommerce platform that helps brands get discovered in modern search engines.
+                When consumers ask ChatGPT, Perplexity, or Google for product recommendations,
+                NorthStar ensures your brand shows up in those answers.
               </p>
             </div>
             <div className="flex gap-2 flex-shrink-0">
@@ -165,7 +165,7 @@ function NorthStarProject() {
           {/* Link only - no tech stack, no GitHub */}
           <div className="pt-6 border-t border-border">
             <a
-              href="https://northstar-geo.vercel.app"
+              href="https://northstar-bice.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-text-primary text-bg-primary text-sm font-medium hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
@@ -207,7 +207,7 @@ function CRMProject() {
                 </div>
               </div>
               <p className="text-text-secondary text-sm sm:text-base leading-relaxed max-w-xl">
-                An AI-powered voice agent that automatically reaches out to customers who rated products low
+                A voice agent that automatically reaches out to customers who rated products low
                 or tried a new SKU. It conducts natural phone conversations, gathers feedback, and
                 generates structured analysis summaries for the CRM team.
               </p>
@@ -414,7 +414,7 @@ export default function Projects() {
         <SectionHeading
           label="Work"
           title="Featured Projects"
-          description="Products I've designed and built from the ground up, solving real problems with AI."
+          description="Products I've designed and built from the ground up, solving real problems for brands."
         />
 
         <div className="space-y-12 md:space-y-16">
