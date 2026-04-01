@@ -42,7 +42,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6 text-text-primary"
         >
-          I build products that help brands grow and sell smarter.
+          I build tools that help ecom brands sell smarter and get instant, actionable feedback on their products.
         </motion.h1>
 
         {/* Supporting description - less AI-heavy */}
@@ -52,7 +52,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg sm:text-xl text-text-secondary max-w-2xl leading-relaxed mb-10"
         >
-          From optimising how products get discovered in the age of agentic and conversational search to automating customer relations with agents &mdash; I design and ship tools at the intersection of technology and commerce.
+          From optimising how products get discovered in the age of agentic and conversational search, to automating customer relations with intelligent agents &mdash; I design and ship at the intersection of technology and commerce.
         </motion.p>
 
         {/* CTA buttons */}
