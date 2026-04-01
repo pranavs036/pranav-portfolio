@@ -32,7 +32,12 @@ export default function Navbar() {
             : "bg-transparent border-transparent"
         }`}
       >
-        <a href="#" className="font-heading font-bold text-lg tracking-tight cursor-pointer text-text-primary">
+        <a
+          href="#"
+          className={`font-heading font-bold text-lg tracking-tight cursor-pointer text-accent transition-all duration-300 ${
+            scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        >
           Pranav Sharma
         </a>
 

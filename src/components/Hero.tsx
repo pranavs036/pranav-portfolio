@@ -34,18 +34,8 @@ export default function Hero() {
         }} />
       </div>
 
-      <div className="relative max-w-3xl mx-auto text-center z-10">
-        {/* Name - bigger, with accent color */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-base sm:text-lg font-heading font-semibold text-accent tracking-wide uppercase mb-6"
-        >
-          Pranav Sharma
-        </motion.p>
-
-        {/* Main tagline - de-emphasize AI, focus on brands/commerce */}
+      <div className="relative max-w-3xl mx-auto text-left z-10">
+        {/* Main tagline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed mb-10"
+          className="text-lg sm:text-xl text-text-secondary max-w-2xl leading-relaxed mb-10"
         >
           From optimising how products get discovered in the age of agentic and conversational search to automating customer relations with agents &mdash; I design and ship tools at the intersection of technology and commerce.
         </motion.p>
@@ -70,7 +60,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-start gap-4"
         >
           <a
             href="#projects"
