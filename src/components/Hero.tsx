@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed mb-10"
         >
-          From optimising how products get discovered in search engines to automating customer outreach with voice agents &mdash; I design and ship tools at the intersection of technology and commerce.
+          From optimising how products get discovered in the age of agentic and conversational search to automating customer relations with agents &mdash; I design and ship tools at the intersection of technology and commerce.
         </motion.p>
 
         {/* CTA buttons */}

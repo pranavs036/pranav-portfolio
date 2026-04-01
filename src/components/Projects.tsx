@@ -412,9 +412,9 @@ export default function Projects() {
     <section id="projects" className="relative px-6 py-24 md:py-32">
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          label="Work"
-          title="Featured Projects"
-          description="Products I've designed and built from the ground up, solving real problems for brands."
+          label="Current Work"
+          title="What I'm Building Now"
+          description="After shipping products at Blinkit, Sprinklr, and Swish — here's what I'm working on independently."
         />
 
         <div className="space-y-12 md:space-y-16">

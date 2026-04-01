@@ -36,8 +36,8 @@ export default function About() {
       <div className="relative max-w-6xl mx-auto">
         <SectionHeading
           label="About"
-          title="The Builder Behind the Products"
-          description="Passionate about creating AI-powered tools that solve real business problems."
+          title="Background"
+          description="Product manager turned builder. I've shipped at scale and now I build independently."
         />
 
         <motion.div
@@ -56,25 +56,25 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="font-heading text-xl font-bold text-text-primary">Pranav Sharma</h3>
-                  <p className="text-sm text-text-secondary">AI & SaaS Builder</p>
+                  <p className="text-sm text-text-secondary">Product &amp; Engineering</p>
                 </div>
               </div>
 
               <p className="text-text-secondary leading-relaxed mb-6">
-                I build products that sit at the intersection of artificial intelligence and business.
-                My focus is on creating tools that help brands adapt to the AI-first future &mdash;
-                from optimising product visibility in AI search engines to automating customer
-                engagement with intelligent voice agents.
+                Started as an iOS engineer at <strong className="text-text-primary">Blinkit</strong>, building native Swift/UIKit flows.
+                Then joined the founding team of <strong className="text-text-primary">Bistro</strong> (Blinkit&apos;s 10-min food delivery) as one of 2 PMs &mdash;
+                scaled it from zero to 3 lakh monthly orders in six months across 15 micro-kitchens.
               </p>
               <p className="text-text-secondary leading-relaxed mb-6">
-                I believe the best AI products are invisible &mdash; they solve real problems so seamlessly
-                that users forget there&apos;s complex technology behind them. Every product I build
-                starts with a genuine pain point and works backwards to the simplest possible solution.
+                Went on to ship retention and conversion systems at <strong className="text-text-primary">Swish</strong>,
+                and currently own the Social Advocacy module at <strong className="text-text-primary">Sprinklr</strong> &mdash;
+                driving enterprise features for global clients. On the side, I build independent products
+                focused on how brands adapt to the shift in search and customer engagement.
               </p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
-                {["AI/ML", "Full Stack", "Product Design", "SaaS", "Ecommerce", "Voice AI", "NLP"].map((tag) => (
+                {["Product Management", "iOS (Swift)", "Full Stack", "SaaS", "Ecommerce", "Growth", "Operations"].map((tag) => (
                   <span key={tag} className="px-3 py-1 rounded-lg text-xs font-medium bg-bg-secondary border border-border text-text-secondary">
                     {tag}
                   </span>
@@ -88,7 +88,7 @@ export default function About() {
                 <h4 className="font-heading text-sm font-semibold text-text-muted uppercase tracking-wider mb-6">Connect</h4>
                 <div className="space-y-3">
                   <a
-                    href="https://linkedin.com/in/pranavsharma"
+                    href="https://linkedin.com/in/pranav-sharma-nsut/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-border-light hover:bg-bg-secondary transition-all duration-200 cursor-pointer group"
@@ -98,7 +98,7 @@ export default function About() {
                     </div>
                     <div>
                       <div className="text-sm font-medium text-text-primary">LinkedIn</div>
-                      <div className="text-xs text-text-muted">/in/pranavsharma</div>
+                      <div className="text-xs text-text-muted">/in/pranav-sharma-nsut</div>
                     </div>
                   </a>
 
@@ -124,15 +124,16 @@ export default function About() {
             </div>
           </div>
 
-          {/* Experience highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          {/* Experience timeline */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <div className="rounded-2xl border border-border bg-bg-card p-6">
               <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
                 <Briefcase size={18} className="text-text-secondary" />
               </div>
-              <h4 className="font-heading text-base font-semibold text-text-primary mb-2">Product Builder</h4>
+              <h4 className="font-heading text-base font-semibold text-text-primary mb-1">Sprinklr</h4>
+              <p className="text-xs text-accent font-medium mb-2">APM &middot; 2025&ndash;Present</p>
               <p className="text-sm text-text-muted leading-relaxed">
-                End-to-end product development from ideation to production. Shipped multiple AI-powered SaaS products.
+                Owns roadmap for Social Advocacy. Shipped governance features for enterprise clients.
               </p>
             </div>
 
@@ -140,9 +141,32 @@ export default function About() {
               <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
                 <Zap size={18} className="text-text-secondary" />
               </div>
-              <h4 className="font-heading text-base font-semibold text-text-primary mb-2">AI Engineer</h4>
+              <h4 className="font-heading text-base font-semibold text-text-primary mb-1">Blinkit / Bistro</h4>
+              <p className="text-xs text-accent font-medium mb-2">Founding PM + iOS Dev</p>
               <p className="text-sm text-text-muted leading-relaxed">
-                Deep experience with LLMs, voice AI, NLP, and building production AI systems that scale.
+                Scaled 10-min food delivery from 0 to 3L orders/month. Built inventory &amp; order management across 15 kitchens.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-bg-card p-6">
+              <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
+                <Briefcase size={18} className="text-text-secondary" />
+              </div>
+              <h4 className="font-heading text-base font-semibold text-text-primary mb-1">Swish</h4>
+              <p className="text-xs text-accent font-medium mb-2">APM &middot; 2025</p>
+              <p className="text-sm text-text-muted leading-relaxed">
+                Shipped gamified retention (+6%), conversion optimization (+12%), and CRM integration.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-bg-card p-6">
+              <div className="w-10 h-10 rounded-xl bg-bg-secondary border border-border flex items-center justify-center mb-4">
+                <Zap size={18} className="text-text-secondary" />
+              </div>
+              <h4 className="font-heading text-base font-semibold text-text-primary mb-1">Independent</h4>
+              <p className="text-xs text-accent font-medium mb-2">Builder &middot; Now</p>
+              <p className="text-sm text-text-muted leading-relaxed">
+                Building NorthStar and other tools at the intersection of commerce and conversational search.
               </p>
             </div>
           </div>
