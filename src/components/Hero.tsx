@@ -46,11 +46,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="max-w-2xl mb-12"
         >
-          <p className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-4">
-            Consumers don&apos;t Google products anymore &mdash; they ask ChatGPT, Perplexity, and voice assistants. I build the tools that make sure your brand shows up in those answers.
-          </p>
           <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
-            From real-time product visibility audits across every major AI engine, to voice agents that call your customers and turn low ratings into actionable insights &mdash; I ship products that move the needle for ecom brands.
+            Product builder with a background in scaling quick-commerce at Blinkit and shipping enterprise software at Sprinklr. Now building independently &mdash; focused on how ecom brands adapt to conversational search and intelligent automation.
           </p>
         </motion.div>
 
