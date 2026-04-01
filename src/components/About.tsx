@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, MapPin, Briefcase, Zap } from "lucide-react";
+import { Mail, MapPin, Briefcase, Zap, Phone, GraduationCap } from "lucide-react";
 import { LinkedInIcon } from "./icons";
 
 function SectionHeading({ label, title, description }: { label: string; title: string; description: string }) {
@@ -60,14 +60,15 @@ export default function About() {
                 </div>
               </div>
 
-              <p className="text-text-secondary leading-relaxed mb-6">
+              <p className="text-text-secondary leading-relaxed mb-4">
+                B.Tech in Information Technology from <strong className="text-text-primary">Netaji Subhas University of Technology</strong>, Delhi.
                 Started as an iOS engineer at <strong className="text-text-primary">Blinkit</strong>, building native Swift/UIKit flows.
                 Then joined the founding team of <strong className="text-text-primary">Bistro</strong> (Blinkit&apos;s 10-min food delivery) as one of 2 PMs &mdash;
                 scaled it from zero to 3 lakh monthly orders in six months across 15 micro-kitchens.
               </p>
-              <p className="text-text-secondary leading-relaxed mb-6">
+              <p className="text-text-secondary leading-relaxed mb-4">
                 Went on to ship retention and conversion systems at <strong className="text-text-primary">Swish</strong>,
-                and currently own the Social Advocacy module at <strong className="text-text-primary">Sprinklr</strong> &mdash;
+                and currently own the Social Advocacy module at <strong className="text-text-primary">Sprinklr</strong>, Gurgaon &mdash;
                 driving enterprise features for global clients. On the side, I build independent products
                 focused on how brands adapt to the shift in search and customer engagement.
               </p>
@@ -103,7 +104,7 @@ export default function About() {
                   </a>
 
                   <a
-                    href="mailto:hello@pranavsharma.dev"
+                    href="mailto:pranavs036@gmail.com"
                     className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-border-light hover:bg-bg-secondary transition-all duration-200 cursor-pointer group"
                   >
                     <div className="w-9 h-9 rounded-lg bg-green/10 flex items-center justify-center group-hover:bg-green/20 transition-colors">
@@ -111,7 +112,20 @@ export default function About() {
                     </div>
                     <div>
                       <div className="text-sm font-medium text-text-primary">Email</div>
-                      <div className="text-xs text-text-muted">Get in touch</div>
+                      <div className="text-xs text-text-muted">pranavs036@gmail.com</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="tel:+918287610925"
+                    className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-border-light hover:bg-bg-secondary transition-all duration-200 cursor-pointer group"
+                  >
+                    <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                      <Phone size={16} className="text-accent" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-text-primary">Phone</div>
+                      <div className="text-xs text-text-muted">+91 8287610925</div>
                     </div>
                   </a>
                 </div>
@@ -119,7 +133,7 @@ export default function About() {
 
               <div className="flex items-center gap-2 mt-6 pt-4 border-t border-border">
                 <MapPin size={14} className="text-text-muted" />
-                <span className="text-xs text-text-muted">Building remotely</span>
+                <span className="text-xs text-text-muted">Delhi / Gurgaon, India</span>
               </div>
             </div>
           </div>

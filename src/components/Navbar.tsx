@@ -48,7 +48,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:hello@pranavsharma.dev"
+            href="mailto:pranavs036@gmail.com"
             className="text-sm font-medium px-4 py-2 rounded-lg bg-text-primary text-bg-primary hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
           >
             Get in Touch
@@ -87,7 +87,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="mailto:hello@pranavsharma.dev"
+                href="mailto:pranavs036@gmail.com"
                 className="text-sm font-medium px-4 py-3 rounded-lg bg-text-primary text-bg-primary text-center hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
               >
                 Get in Touch

@@ -24,10 +24,10 @@ export default function Footer() {
             Let&apos;s Build Something Together
           </h2>
           <p className="text-text-secondary text-lg max-w-xl mx-auto mb-8">
-            Interested in collaborating on AI products, or just want to chat about the future of AI in commerce?
+            Interested in collaborating, or just want to chat about building products?
           </p>
           <a
-            href="mailto:hello@pranavsharma.dev"
+            href="mailto:pranavs036@gmail.com"
             className="group inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-text-primary text-bg-primary font-heading font-semibold hover:bg-text-secondary transition-colors duration-200 cursor-pointer"
           >
             Say Hello
@@ -44,7 +44,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://linkedin.com/in/pranavsharma"
+                href="https://linkedin.com/in/pranav-sharma-nsut/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg text-text-muted hover:text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-all duration-200 cursor-pointer"
@@ -53,7 +53,7 @@ export default function Footer() {
                 <LinkedInIcon size={18} />
               </a>
               <a
-                href="mailto:hello@pranavsharma.dev"
+                href="mailto:pranavs036@gmail.com"
                 className="p-2 rounded-lg text-text-muted hover:text-green hover:bg-green/10 transition-all duration-200 cursor-pointer"
                 aria-label="Send email"
               >
